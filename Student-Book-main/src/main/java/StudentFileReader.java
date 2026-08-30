@@ -11,10 +11,6 @@ public final class StudentFileReader {
     private StudentFileReader() {
     }
 
-    /**
-     * Читает список студентов из потока (например, ресурса classpath).
-     * Поток не закрывается вызывающей стороной — метод сам закрывает его.
-     */
     public static List<Student> read(InputStream inputStream) throws IOException {
         List<Student> students = new ArrayList<>();
 
